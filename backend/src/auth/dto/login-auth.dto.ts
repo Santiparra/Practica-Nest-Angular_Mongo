@@ -1,0 +1,11 @@
+import { IsNotEmpty, IsString  } from "class-validator";
+
+export class LoginAuthDto {
+    @IsNotEmpty()
+    @IsString()
+    contrasena: string;
+    
+    @IsString()
+    usuario: string;
+    
+}
